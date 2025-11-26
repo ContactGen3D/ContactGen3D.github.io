@@ -1,0 +1,153 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ContactGen3D</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+    <meta name="description" content="ContactGen3D: Object Reconstruction under Occlusion with Generative Priors and Contact-induced Constraints" />
+    <meta property="og:title" content="ContactGen3D" />
+    <meta property="og:description" content="ContactGen3D: Object Reconstruction under Occlusion with Generative Priors and Contact-induced Constraints" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://via.placeholder.com/1200x630.png?text=ContactGen3D" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="ContactGen3D" />
+    <meta property="twitter:description" content="ContactGen3D: Object Reconstruction under Occlusion with Generative Priors and Contact-induced Constraints" />
+    <meta property="twitter:image" content="https://via.placeholder.com/1200x630.png?text=ContactGen3D" />
+
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous" />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+    <script type="text/javascript">WebFont.load({google: {families: [
+        "Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic",
+        "Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic",
+        "Ubuntu:300,300italic,400,400italic,500,500italic,700,700italic",
+        "Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic",
+        "Changa One:400,400italic",
+        "Varela Round:400",
+        "Bungee Shade:regular",
+        "Roboto:300,regular,500",
+        "Bungee Outline:regular"] } });
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <div class="section">
+        <div class="container">
+            <br>
+            <h1 class="title">ContactGen3D</h1>
+            <h1 class="subheader">Object Reconstruction under Occlusion with Generative Priors and Contact-induced Constraints</h1>
+
+            <div class="publication-authors" style="font-size:1.25rem;">
+                <span class="author-block"><a href="https://minghanz.github.io/" target="_blank">Minghan Zhu</a><sup>1,2</sup>,</span>
+                <span class="author-block"><a href="#" target="_blank">Zhiyi Wang</a><sup>2</sup>,</span>
+                <span class="author-block"><a href="#" target="_blank">Qihang Sun</a><sup>2</sup>,</span>
+                <span class="author-block"><a href="https://curly.engin.umich.edu/" target="_blank">Maani Ghaffari</a><sup>2</sup>,</span>
+                <span class="author-block"><a href="https://dair.seas.upenn.edu" target="_blank">Michael Posa</a><sup>1</sup></span>
+            </div>
+            <br>
+            <div class="publication-authors" style="font-size:1.25rem; line-height:22px;">
+                <span class="author-block" style="display:block"><sup>
+                    1</sup>University of Pennsylvania </span>
+                <span class="author-block" style="display:block"><sup>
+                    2</sup>University of Michigan </span>
+                <!-- <span class="author-block" style="display:block; line-height:60px;">Venue/Year (TBD)</span> -->
+            </div>
+
+            <div class="link-labels base-row">
+                <div class="base-col icon-col">
+                    <a href="#" target="_blank" class="link-block">
+                        <img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5cab99df4998decfbf9e218e_paper-01.png" alt="paper" class="icon-img" />
+                    </a>
+                </div>
+                <div class="base-col icon-col">
+                    <a href="#" target="_blank" class="link-block">
+                        <img src="https://uploads-ssl.webflow.com/51e0d73d83d06baa7a00000f/5cae3b53b42ebb3dd4175a82_68747470733a2f2f7777772e69636f6e66696e6465722e636f6d2f646174612f69636f6e732f6f637469636f6e732f313032342f6d61726b2d6769746875622d3235362e706e67.png" alt="code" class="icon-img github-img-icon" />
+                    </a>
+                </div>
+                <!-- <div class="base-col icon-col">
+                    <a href="#" target="_blank" class="link-block">
+                        <img src="./static/logos/dataset_icon.png" alt="dataset" class="icon-img github-img-icon" />
+                    </a>
+                </div> -->
+                <div class="base-col icon-col">
+                    <img src="./static/logos/youtube_1.svg" alt="video" class="icon-img data-img-icon" />
+                </div>
+            </div>
+            <div class="link-labels base-row">
+                <div class="base-col icon-col"><strong class="link-labels-text">Paper</strong></div>
+                <div class="base-col icon-col"><strong class="link-labels-text">Code<br>(coming soon)</strong></div>
+                <!-- <div class="base-col icon-col"><strong class="link-labels-text">Dataset</strong></div> -->
+                <div class="base-col icon-col"><strong class="link-labels-text">Video<br>(coming soon)</strong></div>
+            </div>
+
+            <!-- Main video -->
+            <div class="base-row add-top-padding">
+                <video id="main-video" muted autoplay loop controls>
+                    <source id="mp4"
+                        src="./static/images/Final_Cut_Version4.mp4"
+                        type="video/mp4">
+                </video>
+            </div>
+
+            <h1 class="tldr"><b>TL;DR</b>: ContactGen3D combines generative models and contact information for realistic
+                3D object reconstruction with physical interaction constraints.</h1>
+
+            <div class="base-row add-top-padding">
+                <h1 id="abstract">Abstract</h1>
+                <p class="paragraph">
+                    Object geometry is key information for robot manipulation. Yet, object reconstruction 
+                    is a challenging task because cameras only capture partial observations of objects, 
+                    especially when occlusion occurs. In this paper, we leverage two extra sources of information 
+                    to reduce the ambiguity of vision signals. First, generative models learn priors of the shapes 
+                    of commonly seen objects, allowing us to make reasonable guesses of the unseen part of geometry. 
+                    Second, contact information, which can be obtained from videos and physical interactions, 
+                    provides sparse constraints on the boundary of the geometry. We combine the two sources of 
+                    information through contact-guided 3D generation. The guidance formulation is inspired by 
+                    drag-based editing in generative models. Experiments on synthetic and real-world data show 
+                    that our approach improves the reconstruction compared to pure 3D generation and contact-based 
+                    optimization.
+                </p>
+            </div>
+
+            <!-- <div class="base-row add-top-padding">
+                <h1>Architecture</h1>
+                <p class="paragraph">
+                    Briefly describe the system components and data flow. You can embed a diagram or video later.
+                </p>
+            </div>
+
+            <div class="base-row add-top-padding">
+                <h1>Results</h1>
+                <p class="paragraph">
+                    Add figures, carousels, and quantitative tables when ready. The stylesheet already supports two-column figures and tables.
+                </p>
+            </div>
+
+            <div class="base-row add-top-padding">
+                <h1>Acknowledgments</h1>
+                <p class="paragraph">Add funding and thanks here.</p>
+            </div> -->
+
+            <!-- <div class="citation add-top-padding">
+                <h1>Citation</h1>
+                <p>If you find this work useful, please consider citing:</p>
+<pre id="codecell0">@inproceedings{contactgen3d2025,
+  title={ContactGen3D: Title Goes Here},
+  author={Author 1 and Author 2 and Author 3},
+  year={2025},
+  booktitle={Venue TBD},
+  website={https://contactgen3d.github.io/}
+}
+</pre>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Template adapted from a minimalized version of Vysics website structure. -->
+</body>
+</html>
